@@ -22,13 +22,13 @@ import com.hjl.demo.Utils.event.ViewInject;
 
 public class MainActivity extends BaseActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-
+private Button btn_text;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        Button btn_text = (Button) findViewById(R.id.btn_text);
+        btn_text = (Button) findViewById(R.id.btn_text);
         btn_text.setText("123");
         setSupportActionBar(toolbar);
 //        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
